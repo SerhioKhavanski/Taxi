@@ -1,0 +1,8 @@
+::root{
+    --index:calc(1vw+1vh);
+}
+header{
+    height: 100vh;
+    background-image:url(../img/TaxiImg.png) ;
+    background-size: cover;
+}
