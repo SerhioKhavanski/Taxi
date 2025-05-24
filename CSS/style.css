@@ -1,8 +1,26 @@
-::root{
+:root{
     --index:calc(1vw+1vh);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     height: 100vh;
-    background-image:url(../img/TaxiImg.png) ;
-    background-size: cover;
+    width: 100%;
+}
+header>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: url(#clipShape);
+    -webkit-clip-path: url(#clipShape);
+}
+
+.glass{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/Glass.png);
 }
