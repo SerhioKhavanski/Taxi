@@ -5,6 +5,9 @@ body{
     background-color: #202020;
     overflow-x: hidden;
 }
+.headerTabletVersion{
+    display: none;
+}
 *{
     margin: 0;
     padding: 0;
@@ -33,12 +36,25 @@ body{
   
   .glass-panel {
     position: absolute;
-    bottom:-0.1%;    /* Подгони вручную! */
-    left: -9.6%;       /* Подгони вручную! */
-    width:60vw;    /* Адаптивная ширина */
+    bottom:-0.1%;    
+    left: -90%;       
+    width:60vw;   
     height: auto;
     z-index: 2;
     pointer-events: none;
-    transition: all 0.3s ease;
-    backdrop-filter:20px;
+    transition: left 1s ease-out;
+
+    /* -9.6% */
+  }
+
+  @media (max-width: 1024px) {
+    .hero{
+        display: none;
+    }
+    .headerTabletVersion{
+        display: block;
+    }
+  }
+  .show{
+    left: -9.5%; 
   }
