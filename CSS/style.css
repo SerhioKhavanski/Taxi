@@ -180,13 +180,15 @@ a{
     transition: 0.3s;
   }
   .hero-social-networks{
+
     position: absolute;
+    bottom: 0.1vh; 
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 5;
     display: flex;
     justify-content: space-between;
     width: 19%;
-    top: 93%;
-    left: 41%;
   }
   .socia-card:hover{
     box-shadow: inset -4px -4px 8px #40404000, inset 4px 4px 8px #00000000,0 0 15px #00B8A8;
@@ -194,13 +196,7 @@ a{
   .socia-card:hover #phone, .socia-card:hover #telegram,.socia-card:hover #instagram{
     fill: #00B8A8;
   }
-  @media (max-height: 950px) and (max-width: 1920px){
 
-    .hero-social-networks{
-      top: 92%;
-      left: 41%;
-    }
-  }
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
       width: 67vw;  
@@ -249,10 +245,6 @@ a{
     .show-content{
       left:0%;
     }
-    .hero-social-networks {
-      top: 92.5%;
-      left: 40.5%;
-  }
   }
   @media (max-height: 765px) and (max-width: 1680px){
     .glass-panel{
@@ -269,10 +261,6 @@ a{
     .show-content{
       left:0%;
     }
-    .hero-social-networks {
-      top: 91%;
-      left: 40.5%;
-  }
   }
 
   @media (max-height: 1050px) and (max-width: 1400px){
@@ -303,10 +291,6 @@ a{
     .show{
       left: -19.5%; 
     }
-    .hero-social-networks {
-      top: 93%;
-      left: 40.5%;
-  }
   .hero-social-networks>.socia-card{
     border-radius:15px;
   }
@@ -320,10 +304,6 @@ a{
     .show{
       left: -14.5%; 
     }
-    .hero-social-networks {
-      top: 93%;
-      left: 40.5%;
-  }
   .hero-social-networks>.socia-card{
     border-radius:15px;
   }
@@ -338,11 +318,6 @@ a{
     .show{
       left: -9.5%; 
     }
-    .hero-social-networks{
-      top: 92%;
-      left: 40.6%;
-    }
-    
   }
 
   @media (max-height: 770px) and (max-width: 1366px){
@@ -363,10 +338,6 @@ a{
     .header-info{
       margin-top: 2vh;
     }
-    .hero-social-networks{
-      top: 93%;
-      left: 41%;
-    }
   }  
   @media (max-height: 640px) and (max-width: 1366px){
     .glass-panel{
@@ -385,10 +356,6 @@ a{
     }
     .header-info{
       margin-top: 2vh;
-    }
-    .hero-social-networks{
-      top: 92%;
-      left: 41%;
     }
   }  
 
@@ -506,10 +473,6 @@ a{
     .show-content{
       left:0%;
     }
-    .hero-social-networks {
-      top: 93%;
-      left: 40.7%;
-  }
     
   }
 
@@ -528,11 +491,6 @@ a{
     .show-content{
       left:0%;
     }
-    .hero-social-networks {
-      top: 92%;
-      left: 41.2%;
-
-  }
 
   }
 
