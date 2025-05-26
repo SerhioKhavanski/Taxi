@@ -75,6 +75,7 @@ a{
 .main-button:active{
   color:rgb(173, 173, 173);
   background-color: #035c54;
+  box-shadow:inset 0 0 15px rgba(0, 0, 0, 0.438);
 }
 .secondary-button:active{
   color:rgb(173, 173, 173);
@@ -195,6 +196,13 @@ a{
   }
   .socia-card:hover #phone, .socia-card:hover #telegram,.socia-card:hover #instagram{
     fill: #00B8A8;
+  }
+
+  .socia-card:active{
+    box-shadow: inset -4px -4px 8px #404040, inset 4px 4px 8px #000000,0 0 15px #00635a;
+  }
+  .socia-card:active #phone, .socia-card:active #telegram,.socia-card:active #instagram{
+    fill: #00635a;
   }
 
   @media (max-height: 1050px) and (max-width: 1680px){
