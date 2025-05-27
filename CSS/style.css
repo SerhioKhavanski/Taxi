@@ -575,6 +575,39 @@ margin-bottom: 1vh;
 }
 .all-view-points{
   margin: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5vh;
+
+}
+.view-point{
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  width: 48%;
+  box-shadow: -4px -4px 8px #404040, 4px 4px 8px #000000;
+  border-radius:20px;
+}
+.view-point>img{
+  width: 40%;
+  border-radius:15px;
+}
+.view-info{
+  display: flex;
+  gap: 5%;
+}
+.view-info>p{
+  border-radius: 25px;
+  border: 1px solid #FECC1C;
+  padding: 3% 5%;
+}
+.view-point-text>p{
+  font-weight:700;
+  margin-top:8%;
+}
+.health{
+  border: 1px solid #00B8A8 !important;
 }
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
