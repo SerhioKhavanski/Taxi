@@ -248,6 +248,9 @@ a{
   }
  
   .about-img{
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -258,6 +261,10 @@ a{
     background-position-x:40%;
     background-size:40%;
   }
+  .about-img.show-img {
+    opacity: 1;
+    transform: scale(1);
+  }
   .about-img>img{
     width: 100%;
   }
@@ -265,8 +272,27 @@ a{
     display: inline-block;
     margin-top: calc(var(--index)*0.8);
   }
+  /* .why-us-points{
+    background-image:url(../img/roud.svg);
+  } */
+  .why-us>h2{
+    text-align: center;
+  }
+.card{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.card1.show-card { transition-delay: 0s; }
+.card2.show-card { transition-delay: 0.2s; }
+.card3.show-card { transition-delay: 0.4s; }
+.card4.show-card { transition-delay: 0.6s; }
+.card5.show-card { transition-delay: 0.8s; }
 
-
+.show-card {
+  opacity: 1;
+  transform: translateY(0);
+}
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
       width: 67vw;  
