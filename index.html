@@ -14,6 +14,7 @@
     <script src="JS//validation.js" defer ></script>
     <script src="JS/sendMessage.js" defer></script>
     <script src="JS/menu.js" defer></script>
+    <script src="JS/links.js" defer></script>
 
 </head>
 <body>
@@ -34,24 +35,24 @@
 
       <div class="hero-content">
           <ul class="menu-desktop">
-              <li><a href="#" class="menu-a"><img src="img/taxi 1.png" alt=""></a></li>
-              <li><a href="#" class="menu-a">О нас</a></li>
-              <li><a href="#" class="menu-a">Условия работы</a></li>
-              <li><a href="#" class="menu-a">Реестр</a></li>
-              <li><a href="#" class="menu-a">Заявка</a></li>
-              <li><a href="#" class="menu-a">Пункты осмотра</a></li>
-              <li><a href="#" class="menu-a">Контакты</a></li>
+              <li><img src="img/taxi 1.png" alt=""></li>
+              <li><a href="#infoTolk" class="menu-a">О нас</a></li>
+              <li><a href="#conditions" class="menu-a">Условия работы</a></li>
+              <li><a href="#requirements" class="menu-a">Реестр</a></li>
+              <li><a href="#work" class="menu-a">Заявка</a></li>
+              <li><a href="#view" class="menu-a">Пункты осмотра</a></li>
+              <li><a href="#footer" class="menu-a">Контакты</a></li>
               
           </ul>
 
             <ul class="menu-desktop sticky-menu">
-              <li><a href="#" class="menu-a"><img src="img/taxi 1.png" alt=""></a></li>
-              <li><a href="#" class="menu-a">О нас</a></li>
-              <li><a href="#" class="menu-a">Условия работы</a></li>
-              <li><a href="#" class="menu-a">Реестр</a></li>
-              <li><a href="#" class="menu-a">Заявка</a></li>
-              <li><a href="#" class="menu-a">Пункты осмотра</a></li>
-              <li><a href="#" class="menu-a">Контакты</a></li>
+              <li><img src="img/taxi 1.png" alt=""></li>
+              <li><a href="#infoTolk" class="menu-a">О нас</a></li>
+              <li><a href="#conditions" class="menu-a">Условия работы</a></li>
+              <li><a href="#requirements" class="menu-a">Реестр</a></li>
+              <li><a href="#work" class="menu-a">Заявка</a></li>
+              <li><a href="#view" class="menu-a">Пункты осмотра</a></li>
+              <li><a href="#footer" class="menu-a">Контакты</a></li>
               
             </ul>
 
@@ -126,12 +127,13 @@
             <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
             <label for="burger-checkbox" class="burger"></label>
             <ul class="menu-list">
-                <li><a href="#" class="menu-item"><img src="img/taxi 1.png" alt=""></a></li>
-                <li><a href="#" class="menu-item">О нас</a></li>
-                <li><a href="#" class="menu-item">Условия работы</a></li>
-                <li><a href="#" class="menu-item">Реестр</a></li>
-                <li><a href="#" class="menu-item">Контакты</a></li>
-                <li><a href="#" class="menu-item">Заявка</a></li>
+                <li><img src="img/taxi 1.png" alt=""></li>
+                <li><a href="#infoTolk" class="menu-a">О нас</a></li>
+                <li><a href="#conditions" class="menu-a">Условия работы</a></li>
+                <li><a href="#requirements" class="menu-a">Реестр</a></li>
+                <li><a href="#work" class="menu-a">Заявка</a></li>
+                <li><a href="#view" class="menu-a">Пункты осмотра</a></li>
+                <li><a href="#footer" class="menu-a">Контакты</a></li>
             </ul>
           </div>
           <img src="img/Taxi768.png" alt="">
@@ -161,7 +163,7 @@
       </div>
     </div>
 
-    <div class="why-us">
+    <div class="why-us" id="why">
       <h2>Почему мы ?</h2>
       <svg  viewBox="0 0 1440 866" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g clip-path="url(#clip0_470_34)" filter="url(#filter0_dd_470_34)">
@@ -566,7 +568,7 @@
         
     </div>
 
-    <div class="conditions-info">
+    <div class="conditions-info" id="conditions">
       <h2>Условия работы</h2>
 
       <div class="conditions-info-content-wrapper">
@@ -641,7 +643,7 @@
       </div>
     </div>
 
-    <div class="requirements">
+    <div class="requirements" id="requirements">
       <h2>Требования к реестру</h2>
       <div class="requirements-wrapper">
         <div class="requirements-img">
@@ -752,7 +754,7 @@
         </div>
       </div>
     </div>
-    <div class="work">
+    <div class="work" id="work">
       <h2>Как начать работать?</h2>
 
       <div class="work-wrapper">
@@ -832,13 +834,18 @@
       </div>
     </div>
 
-    <div class="view">
+    <div class="view" id="view">
       <h2>Пункты осмотра</h2>
-      <div  style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/?ll=27.586916%2C53.902953&utm_medium=mapframe&utm_source=maps&z=12.38" style="color:#eee;font-size:12px;position:absolute;top:14px;">Минск — Яндекс Карты</a><iframe class="map" src="https://yandex.by/map-widget/v1/?ll=27.586916%2C53.902953&z=12.38"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      <p>Нажмите на карту для активации карты</p>
+      <div class="map-container">
+        <div class="map-overlay"></div>
+        <div  style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/?ll=27.586916%2C53.902953&utm_medium=mapframe&utm_source=maps&z=12.38" style="color:#eee;font-size:12px;position:absolute;top:14px;">Минск — Яндекс Карты</a><iframe class="map" src="https://yandex.by/map-widget/v1/?ll=27.586916%2C53.902953&z=12.38"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+      </div>
 
       <div class="all-view-points">
         <div class="view-point">
-          <img src="JS/image.jpg" alt="">
+          <img src="img/image.jpg" alt="">
           <div class="view-point-text">
             <h2>БЦ “ПУШКИНСКИЙ”</h2>
             <div class="view-info">
@@ -852,7 +859,7 @@
         </div>
 
         <div class="view-point">
-          <img src="JS/image.jpg" alt="">
+          <img src="img/image.jpg" alt="">
           <div class="view-point-text">
             <h2>БЦ “ПУШКИНСКИЙ”</h2>
             <div class="view-info">
@@ -866,7 +873,7 @@
         </div>
 
         <div class="view-point">
-          <img src="JS/image.jpg" alt="">
+          <img src="img/image.jpg" alt="">
           <div class="view-point-text">
             <h2>БЦ “ПУШКИНСКИЙ”</h2>
             <div class="view-info">
@@ -880,7 +887,7 @@
         </div>
 
         <div class="view-point">
-          <img src="JS/image.jpg" alt="">
+          <img src="img/image.jpg" alt="">
           <div class="view-point-text">
             <h2>БЦ “ПУШКИНСКИЙ”</h2>
             <div class="view-info">
@@ -898,6 +905,19 @@
 
   </main>
 
+  <hr class="footer-div">
+  <footer id="footer">
+      
+      <div class="footer-info">
+        <p>© 2025 – Все права защищены Адрес: Беларусь, г. Минск,Берута 3Б, 415 каб.</p>
+      </div>
+      <div class="footer-info">
+        <p>График работы офиса: ПН - ПТ: 09:00 - 17:00 СБ, ВС - Выходной</p>
+      </div>
+      <div class="footer-info">
+        <p>ООО "СКАЙРОУД", УНП: 193797907 Карт-счет: BY85ALFA30122F47810010270000 в BYN в ЗАО 'Альфа-Банк', БИК: ALFABY2X</p>
+      </div>
+  </footer>
  
 
 </body>

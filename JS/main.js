@@ -8,3 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
     heroContent.classList.add('show-content');
   }, 200); // задержка в мс
 });
+document.querySelector('.map-overlay').addEventListener('click', function () {
+  this.style.display = 'none';
+});
