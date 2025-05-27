@@ -233,19 +233,6 @@ a{
     position: relative;
   
   }
-  .support{
-    right: 8%;
-  }
-  .img-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:4vw;
-    background-color:#202020;
-    padding: 4% 1%;
-    border-radius: 10px;
-    box-shadow:-4px -4px 8px #404040,  4px 4px 8px #000000
-  }
  
   .about-img{
     opacity: 0;
@@ -272,10 +259,8 @@ a{
     display: inline-block;
     margin-top: calc(var(--index)*0.8);
   }
-  /* .why-us-points{
-    background-image:url(../img/roud.svg);
-  } */
-  .why-us>h2{
+
+  .why-us>h2,.conditions-info>h2,.requirements>h2{
     text-align: center;
   }
 .card{
@@ -293,6 +278,64 @@ a{
   opacity: 1;
   transform: translateY(0);
 }
+
+.conditions-info{
+  margin: 5% 0;
+}
+.conditions-info-content-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.conditions-info-text{
+  width: 50%;
+  margin-left: 3%;
+
+}
+.conditions-info-img{
+  width: 45%;
+}
+.conditions-info-img>img{
+  width: 100%;
+}
+.conditions-info-text-points-wrapper>h3{
+  color:white;
+  line-height: calc(var(--index)*1)
+}
+.conditions-info-text-points-wrapper{
+  display: flex;
+  align-items:center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+.show-condition {
+  opacity: 1;
+  transform: translateY(0);
+}
+.conditions-info-text-points-wrapper>img{
+  width: 7.5%;
+
+}
+.base>h3{
+  padding: 3% 0 0 3%;
+
+}
+.top>h3{
+  padding: 9% 0 0 3%;
+}
+.bot>a{
+  margin:0 0 6% 3%
+}
+
+.requirements-img{
+  margin-left: 3%;
+  width: 25%;
+}
+.requirements-img>img{
+  width: 100%;
+}
+
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
       width: 67vw;  
