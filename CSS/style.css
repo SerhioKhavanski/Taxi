@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 :root{
     --index:calc(1vw + 1vh);
 }
@@ -23,6 +26,46 @@
 body{
     background-color: #202020;
     overflow-x: hidden;
+}
+.sticky-menu {
+  position: fixed;
+  width: 50%;
+  top: 0;
+  left: 22%;
+  right: 0;
+  backdrop-filter:blur(10px);
+  background-color:#202020d8;
+  border-radius:  0 0 25px 25px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  
+  z-index: 9;
+}
+
+.sticky-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items:center;
+}
+
+.sticky-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  align-items:center;
+}
+
+.sticky-menu.visible {
+  align-items:center;
+  transform: translateY(0);
 }
 
 h1{
@@ -68,6 +111,8 @@ a{
   padding: 2% 3%;
   border-radius:30px;
   transition: .3s;
+  outline: none;
+  border: none;
 }
 .secondary-button{
   background-color: transparent;
@@ -168,6 +213,7 @@ a{
     justify-content: space-between;
     align-items: flex-end;
     list-style: none;
+    align-items:center;
   }
   .menu-a>img{
     width: 100%;
@@ -260,7 +306,7 @@ a{
     margin-top: calc(var(--index)*0.8);
   }
 
-  .why-us>h2,.conditions-info>h2,.requirements>h2{
+  .why-us>h2,.conditions-info>h2,.requirements>h2,.work>h2,.view>h2{
     text-align: center;
   }
 .card{
@@ -391,7 +437,145 @@ margin: 5% 3%;
   font-size: calc(var(--index)*.56);
   white-space: nowrap;
 }
+.work{
+  margin: 5% 0 5% 3%;
+}
+.work-wrapper-form{
+  padding: 3% ;
+  width: 48%;
+  box-shadow: inset -4px -4px 8px #404040, inset  4px 4px 8px #000000;
+  border-radius: 30px 0 0 30px;
+  transform: translateX(10px);
+}
+.work-wrapper-form>h3{
+  color:white;
+}
+.work-wrapper-info{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.work-wrapper{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work-wrapper-text{
+  display: flex;
+  align-items:center;
+  gap: 5%;
+}
+.work-wrapper-info>img{
+  width: 2%;
+  margin-left: 6.5%;
+}
+.work-wrapper-text>img{
+  width: 15%;
+}
+.work-wrapper-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input-field>input,.input-field select  {
+  background-color:transparent;
+  font-size: calc(var(--index)*.6);
+  outline: none;
+  border:2px solid #FECC1C;
+  border-radius:10px;
+  width: 70%;
+  padding: 3%;
+}
+select {
+  appearance: none;         
+  -webkit-appearance: none; 
+  -moz-appearance: none;    
+  background-image: none;
+}
+.input-field>input::placeholder{
+  font-size: calc(var(--index)*.6);
+}
+.input-field,.chek{
+  margin-top: 4%;
+}
+.chek{
+  display: flex;
+  align-items: center; 
+  gap: 2%;
+}
+.input-field>p{
+  margin-bottom: 1%;
+}
+.work-wrapper-text-point>h3{
+margin-bottom: 1vh;
+  font-size: calc(var(--index)*0.85);
+}
+.select-wrapper::after {
+  content: "▼"; 
+  color:#FECC1C;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+}
 
+.select-wrapper select {
+  appearance: none;
+  width: 100%;
+  padding-right: 30px;
+  padding: 4.5%;
+}
+.select-wrapper option{
+  color: rgb(0, 0, 0);
+  background-color:transparent;
+}
+
+.work-wrapper-form>h3{
+  color:white;
+  font-size: calc(var(--index)*.7);
+}
+.form-btn{
+  margin-top: 2%;
+  width: fit-content;
+}
+#checkForm{
+  appearance: none;
+  width:20px;
+  height: 20px;
+  border: 1px solid #00B8A8;
+  border-radius: 4px;
+}
+#checkForm:checked::after{
+  content: "✓";
+  color: #00B8A8;
+  font-size: calc(var(--index)*.7);
+  position: relative;
+  bottom: 5px;
+}
+
+.input-error {
+  border-color: red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.map{
+  width:100%;
+  height: 70vh;
+}
+.all-view-points{
+  margin: 3%;
+}
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
       width: 67vw;  

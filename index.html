@@ -11,6 +11,9 @@
     <script src="JS/showAboutImg.js" defer ></script>
     <script src="JS/showConditions.js" defer ></script>
     <script src="JS/ShowRequirments.js" defer ></script>
+    <script src="JS//validation.js" defer ></script>
+    <script src="JS/sendMessage.js" defer></script>
+    <script src="JS/menu.js" defer></script>
 
 </head>
 <body>
@@ -35,9 +38,22 @@
               <li><a href="#" class="menu-a">О нас</a></li>
               <li><a href="#" class="menu-a">Условия работы</a></li>
               <li><a href="#" class="menu-a">Реестр</a></li>
-              <li><a href="#" class="menu-a">Контакты</a></li>
               <li><a href="#" class="menu-a">Заявка</a></li>
+              <li><a href="#" class="menu-a">Пункты осмотра</a></li>
+              <li><a href="#" class="menu-a">Контакты</a></li>
+              
           </ul>
+
+            <ul class="menu-desktop sticky-menu">
+              <li><a href="#" class="menu-a"><img src="img/taxi 1.png" alt=""></a></li>
+              <li><a href="#" class="menu-a">О нас</a></li>
+              <li><a href="#" class="menu-a">Условия работы</a></li>
+              <li><a href="#" class="menu-a">Реестр</a></li>
+              <li><a href="#" class="menu-a">Заявка</a></li>
+              <li><a href="#" class="menu-a">Пункты осмотра</a></li>
+              <li><a href="#" class="menu-a">Контакты</a></li>
+              
+            </ul>
 
         <h1>Работа водителем<br> в Яндекс  <b>Такси</b></h1>
 
@@ -70,8 +86,8 @@
         </div>
   
         <div class="buttons">
-          <a href="" class="button main-button"> Подать заявку</a>
-          <a href="" class="button secondary-button"> Узнать больше</a>
+          <a href="#formochka" class="button main-button"> Подать заявку</a>
+          <a href="#infoTolk" class="button secondary-button"> Узнать больше</a>
         </div>
       </div>
     </div>
@@ -125,7 +141,7 @@
 
 
   <main>
-    <div class="about">
+    <div class="about" id="infoTolk">
       <div class="about-text">
         <h2>Давайте познакомимся!</h2>
         <p>
@@ -137,7 +153,7 @@
         <p>
           Работайте комфортно, уверенно и без лишних забот. Начните сотрудничество с надёжным таксопарком уже сегодня!
         </p>
-        <a href="" class="button main-button about-btn">Подать заявку</a> 
+        <a href="#formochka" class="button main-button about-btn">Подать заявку</a> 
       </div>
       
       <div class="about-img" >
@@ -613,7 +629,7 @@
 
             <div class="conditions-info-text-points-wrapper bot">
               <img src="img/pointEnd.svg" alt="">
-              <a href="" class="button main-button"> Подать заявку</a>
+              <a href="#formochka" class="button main-button"> Подать заявку</a>
             </div>
           </div>
         </div>
@@ -736,7 +752,105 @@
         </div>
       </div>
     </div>
+    <div class="work">
+      <h2>Как начать работать?</h2>
 
+      <div class="work-wrapper">
+        
+        <div class="work-wrapper-info">
+
+
+
+          <div class="work-wrapper-text">
+            <img src="img/step1.svg" alt="">
+            <div class="work-wrapper-text-point">
+              <h3>
+                Оставьте заявку на сайте
+              </h3>
+              <p>Мы перезвоним для уточнения деталей</p>
+            </div>
+          </div>
+          <img src="img/Connect.svg" alt="">
+
+          <div class="work-wrapper-text">
+            <img src="img/step2.svg" alt="">
+            <div class="work-wrapper-text-point">
+              <h3>
+                Скачайте приложение Яндекс PRO
+              </h3>
+              <p>Пройдите короткий тренинг</p>
+            </div>
+          </div>
+          <img src="img/Connect.svg" alt="">
+
+          <div class="work-wrapper-text">
+            <img src="img/step3.svg" alt="">
+            <div class="work-wrapper-text-point">
+              <h3>
+                Выходите на линию
+              </h3>
+              <p>Получайте первые заказы и зарабатывайте</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <form class="work-wrapper-form" id="formochka" action="telegram.php">
+          <h3>Присоединиться к команде !</h3>
+          <div class="input-field">
+            <p>Имя, Фамилия</p>
+            <input type="text" placeholder="Укажите своё имя и фамилию">
+          </div>
+
+          <div class="input-field">
+            <p>Номер телефона</p>
+            <input id="phone" type="text" placeholder="Укажите свой номер телефона">
+          </div>
+
+          <div class="input-field">
+            <p>Город</p>
+            <input type="text" placeholder="Укажите свой город">
+          </div>
+
+          <div class="input-field">
+            <p>Вакансии</p>
+            <div class="select-wrapper">
+              <select >
+                <option value="one">На своём авто</option>
+                <option value="two">На арендном авто (Минск)</option>
+              </select>
+          </div>
+          </div>
+
+          <div class="chek">
+            <input type="checkbox" name="" id="checkForm">
+            <label for="#checkForm">Я соглашаюсь с обработкой персональных данных*</label>
+          </div>
+          <button class="button main-button form-btn">Подать заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="view">
+      <h2>Пункты осмотра</h2>
+      <div  style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/?ll=27.586916%2C53.902953&utm_medium=mapframe&utm_source=maps&z=12.38" style="color:#eee;font-size:12px;position:absolute;top:14px;">Минск — Яндекс Карты</a><iframe class="map" src="https://yandex.by/map-widget/v1/?ll=27.586916%2C53.902953&z=12.38"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      <div class="all-view-points">
+        <div class="view-point">
+          <img src="JS/image.jpg" alt="">
+          <div class="view-point-text">
+            <h2>БЦ “ПУШКИНСКИЙ”</h2>
+            <div class="view-info">
+              <p>медосмотр</p>
+              <p>техосмотр</p>
+            </div>
+            <p>Адрес: Берута 3б </p>
+            <p>Режим работы: Пн-Вс  11:00 - 19:00 </p>
+            <p>Телефон: +375 29 123 45 67</p>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
   </main>
