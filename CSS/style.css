@@ -230,7 +230,11 @@ a{
     width: 35%;
     display: flex;
     justify-content: space-between;
+    position: relative;
   
+  }
+  .support{
+    right: 8%;
   }
   .img-wrapper{
     display: flex;
@@ -242,29 +246,26 @@ a{
     border-radius: 10px;
     box-shadow:-4px -4px 8px #404040,  4px 4px 8px #000000
   }
-  .about-img-card img{
-    width: 80%;
-  }
+ 
   .about-img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
     width: 37%;
-    background-image:url(../img/path.svg);
     background-repeat:no-repeat;
-    background-position:center;
+    background-position-y:center;
+    background-position-x:40%;
     background-size:40%;
   }
-  .clean{
-    width: 40%;
+  .about-img>img{
+    width: 100%;
   }
-  .deal{
-    width: 45%;
+  .about-btn{
+    display: inline-block;
+    margin-top: calc(var(--index)*0.8);
   }
-  .dollar{
-    width: 32%;
-  }
+
 
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
