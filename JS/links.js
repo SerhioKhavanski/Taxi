@@ -1,47 +1,41 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".menu-a");
-    const sections = [];
-  
-    links.forEach(link => {
-      const href = link.getAttribute("href");
-      if (href && href.startsWith("#") && href.length > 1) {
-        const section = document.querySelector(href);
-        if (section) {
-          sections.push({ href, section });
-        }
+document.addEventListener('DOMContentLoaded', () => {
+  const menuLinks = document.querySelectorAll('.menu-a');
+  const sections = Array.from(menuLinks).map(link => document.querySelector(link.getAttribute('href')));
+
+  const activateLink = (id) => {
+    menuLinks.forEach(link => {
+      if (link.getAttribute('href') === `#${id}`) {
+        link.classList.add('active-link');
+      } else {
+        link.classList.remove('active-link');
       }
     });
-  
-    function activateLink(href) {
-      links.forEach(link => {
-        if (link.getAttribute("href") === href) {
-          link.classList.add("active-link");
-        } else {
-          link.classList.remove("active-link");
-        }
-      });
-    }
-  
-    window.addEventListener("scroll", () => {
-      let current = null;
-  
-      sections.forEach(({ href, section }) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-  
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-          current = href;
-        }
-      });
-  
-      if (current) activateLink(current);
+  };
+
+  const onScroll = () => {
+    const scrollPos = window.scrollY + 200;
+
+    sections.forEach(section => {
+      if (section && section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
+        activateLink(section.id);
+      }
     });
-  
-    // Подсветка по клику
-    links.forEach(link => {
-      link.addEventListener("click", () => {
-        const href = link.getAttribute("href");
-        activateLink(href);
-      });
+  };
+
+  window.addEventListener('scroll', onScroll);
+
+  // Для плавной прокрутки при клике
+  menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetID = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetID);
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
     });
   });
+});
