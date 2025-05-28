@@ -1207,6 +1207,18 @@ footer>p{
     :root{
       --index:calc(1vw + 1vh)*1.2;
   }
+  .header-info-point>img {
+    width: 10%;
+}
+.socia-card{
+  border: none;
+  background-color: #20202079 !important;
+}
+.instagram{
+  position: relative;
+  top: 2px;
+}
+
   .requirements-info-point {
     margin:2% 0;
   }
@@ -1277,12 +1289,42 @@ footer>p{
 .select-wrapper select {
   padding: 6.5%;
 }
+.requirements-img {
+  display: flex
+;
+  align-items: center;
+}
+.conditions-info-img {
+  display: flex
+;
+  align-items: center;
+}
+.button {
+  padding: 4% 6%;
+}
+h1 {
+  font-size: calc(var(--index) * 1.8);
   }
+  .header-tablet-content-wrapper{
+    display: flex;
+    align-items:center;
+  }
+}
   @media(max-width:425px){
+    .instagram{
+      position: relative;
+      left: 1px;
+    }
+    .chek>label {
+      font-size: 4vw;
+  }
     .header-tablet-content{
       flex-wrap: wrap;
       flex-direction: column-reverse;
     }
+    .footer-info:nth-child(1) svg {
+      width: 9%;
+  }
     .header-tablet-xontent-text,
     .header-tablet-content-wrapper,
     .about-text,
