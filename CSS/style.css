@@ -638,10 +638,19 @@ margin-bottom: 1vh;
 }
 .view-img{
   width: 40%;
+  height: 100%;
+  background-image:url(../img/image.jpg);
+  background-repeat:no-repeat;
+  background-size :cover;
+  border-radius:15px;
 }
 .view-info{
   display: flex;
   gap: 5%;
+}
+.sub-info{
+  font-weight: 400 !important;
+  margin-top: 1% !important;
 }
 .view-info>p{
   border-radius: 25px;
@@ -725,6 +734,9 @@ footer>p{
   width: 8%;
 }
 .tablet-net{
+  display: none;
+}
+.point-adaptation{
   display: none;
 }
   @media (max-height: 1050px) and (max-width: 1680px){
@@ -1248,7 +1260,7 @@ footer>p{
       margin-bottom: 2vh;
     }
     .requirements-info-point{
-      margin-top: 2vh;
+      margin-top: 4vh;
       flex-direction: row;
       width: 100%;
     }
@@ -1272,10 +1284,94 @@ footer>p{
     }
     .view-point-text>h2{
       font-size: 4.5vw;
+      margin-bottom: 1vh;
+    }
+    .view-point{
+      align-items:center;
     }
     .view-point>img{
       display: block;
     }
+    .menu-list{
+      padding-top: 20%;
+    }
+    h1{
+      font-size: calc(var(--index) * 1.8);
+    }
+    .header-info-point>img {
+      width: 10%;
+    }
+    .button{
+      padding: 4% 6%;
+    }
+    .about-text>.button{
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+    }
+    .point-desk{
+      display: none;
+    }
+    .point-adaptation{
+      display: block;
       
+    }
+    .conditions-info-text-points{
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+    .conditions-info-text-points-wrapper>.button{
+      margin-bottom: 0;
+    }
+    .requirements-img>img{
+      width: 30%;
+    }
+    .requirements-img{
+      display: flex;
+      justify-content: center;  
+    }
+    .requirements-info-point{
+      border-radius: 10px;
+    }
+    .for-adaptation{
+      display: none;
+    }
+      .work-wrapper-info{
+        gap: 2vh;
+      }
+      .work-wrapper-form {
+        margin-top: 4vh;
+        padding: 6%;
+      }
+      .input-field>input{
+        border: 2px solid #FECC1C;
+        width: 100%;
+        padding: 5%;
+    }
+    .input-field select {
+      width: 100%;
+      padding: 6%;
+    }
+    .chek {
+      gap: 5%;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+  }
+  .view-point-text>p{
+    font-size: calc(var(--index) * 0.5);
+  }
+  .view-info>p {
+    font-size: 3vw;
+}
+.footer-info p {
+  font-size: 3vw;
+}
+.footer-info{
+  margin-top: 4vh;
+  gap: 1vh;
+}
+.footer-info:nth-child(2){
+  flex-direction: column;
+}
   }
 
