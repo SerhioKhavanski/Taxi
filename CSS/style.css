@@ -1198,6 +1198,7 @@ footer>p{
       left: 5px; /* подгони, чтобы box был позади или обрамлял бургер */
       z-index: 14;
     }
+
     
     
   }
@@ -1239,6 +1240,42 @@ footer>p{
   }
   .conditions-info-text-points-wrapper>img {
     width: 10%;
+}
+.point-desk{
+  display:none;
+}
+.point-adaptation{
+  display: block;
+  
+}
+.bot>a {
+  margin: 0 0 0% 3%;
+}
+.base>h3,.top>h3 {
+  padding: 0% 0 0 3%;
+}
+.conditions-info-text-points{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.requirements-info-point{
+  border-radius:15px;
+}
+.chek>label{
+  width: 80%;
+  font-size: 1.4vw;
+
+}
+.input-field>input{
+  width: 90%;
+  padding: 5%;
+}
+#checkForm:checked::after {
+  font-size: calc(var(--index) * 1);
+}
+.select-wrapper select {
+  padding: 6.5%;
 }
   }
   @media(max-width:425px){
