@@ -651,32 +651,59 @@ margin-bottom: 1vh;
 .footer-div{
   border: 1px solid #00B8A8 ;
 }
-footer{
+.footer-wraper{
   padding: 3%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap
 }
 footer p{
-  font-size: 1.55vw;
+  font-size: 1vw;
+  line-height: calc(var(--index)*1.08);
 }
-.footer-info:nth-child(1){
+.footer-info{
   width: 30%;
-}
-.footer-info:nth-child(2){
-  width: 30%;
-}
-.footer-info:nth-child(3){
-  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 .map-container {
   position: relative;
   width: 100%;
   height: 70vh;
 }
+.footer-lnk{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+.footer-lnk>p{
+  width: 85%;
+}
+.footer-lnk>svg{
+  width: 8%;
+  fill: #FECC1C;
+}
+.footer-info:nth-child(1) svg{
+  width: 6%;
+  fill: none;
+}
+.footer-info:nth-child(2){
+  width: 15%;
+}
+.footer-info img{
+  margin-right: 10px;
+}
 .view>p{
   text-align:center;
   margin-bottom: 2%;
+}
+footer>p{
+  text-align: center;
+  color: gray;
+  text-align: center;
+  display: block;
 }
 .map-overlay {
   position: absolute;
@@ -686,6 +713,9 @@ footer p{
   z-index: 10;
   background: transparent;
   cursor: pointer;
+}
+.footer-info img{
+  width: 8%;
 }
   @media (max-height: 1050px) and (max-width: 1680px){
     .glass-panel{
@@ -1067,5 +1097,8 @@ footer p{
     }
     .burger-checkbox:checked ~ .menu-list {
       transform: translateX(0);
+    }
+    .header-tablet-content{
+      display: flex;
     }
   }
