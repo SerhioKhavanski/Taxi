@@ -677,6 +677,7 @@ margin-bottom: 1vh;
 .view-point-text>h2{
     font-size: calc(var(--index) * 1.1);
     margin-bottom: 2vh;
+    margin-top: 0;
 }
 .view-info>p{
   padding: 2% 3%;
@@ -1394,6 +1395,9 @@ h1 {
       order: -1;
       margin-bottom: 2vh;
     }
+    p {
+      font-size: calc(var(--index) * .7);
+  }
     .requirements-info-point{
       margin-top: 4vh;
       flex-direction: row;
@@ -1402,6 +1406,16 @@ h1 {
     .requirements-info{
       margin-top: 2vh;
     }
+    .about-text>h2{
+      margin-top: 2vh;
+    }
+    .about{
+      margin-top: 15vh;
+    }
+    .work-wrapper-form>h3 {
+
+      font-size: calc(var(--index) * .9);
+  }
     :root{
       --index:calc(1vw + 1vh)*2;
     }
@@ -1419,10 +1433,12 @@ h1 {
     }
     .view-point-text>h2{
       font-size: 4.5vw;
-      margin-bottom: 1vh;
+      margin-bottom: 3vh;
     }
     .view-point{
       align-items:center;
+      width: 68%;
+      padding: 5%;
     }
     .view-point>img{
       display: block;
@@ -1430,15 +1446,36 @@ h1 {
     .menu-list{
       padding-top: 20%;
     }
-    h1{
-      font-size: calc(var(--index) * 1.8);
-    }
+    h1 {
+      font-size: calc(var(--index) * 1.6);
+  }
     .header-info-point>img {
-      width: 10%;
+      width: 12%;
     }
+    .all{
+      display:flex;
+    }
+    .all-view-points {
+      justify-content: space-around;}
+    .view-point {
+align-items:normal;
+      flex-direction: column;
+  }
+  .ft {
+    margin-top: 3vh;
+    width: 100%;
+}
+.view-point-text {
+
+  margin-top: 5vh;
+width: 100%;}
     .button{
       padding: 4% 6%;
     }
+
+    .view-img {
+      width: 100%;}
+
     .about-text>.button{
       margin-top: 1vh;
       margin-bottom: 2vh;
