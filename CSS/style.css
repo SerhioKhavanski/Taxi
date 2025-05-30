@@ -1476,7 +1476,12 @@ width: 100%;}
     .button{
       padding: 4% 6%;
     }
-
+    .requirements-info-point-img {
+      margin-left: 2vw;
+  }
+.requirements-info-point{
+  align-items:flex-start;
+}
     .view-img {
       width: 100%;}
 
