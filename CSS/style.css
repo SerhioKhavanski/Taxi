@@ -1437,8 +1437,12 @@ h1 {
     }
     .view-point{
       align-items:center;
-      width: 68%;
+      width: 90%;
       padding: 5%;
+    }
+    .ft:nth-child(2){
+      order: 1;
+      width: 100%;
     }
     .view-point>img{
       display: block;
@@ -1463,7 +1467,7 @@ align-items:normal;
   }
   .ft {
     margin-top: 3vh;
-    width: 100%;
+    width: 50%;
 }
 .view-point-text {
 
